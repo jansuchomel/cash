@@ -1,0 +1,33 @@
+micronaut:
+  application:
+    name: cash
+  security:
+    authentication: bearer
+    token:
+      jwt:
+        signatures:
+          secret:
+            generator:
+              secret: ${JWT_GENERATOR_SIGNATURE_SECRET:pleaseChangeThisSecretForANewOne}
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        connection:
+          db-type: postgres
+    reactive: true
+vertx:
+  pg:
+    client:
+      port: 5432
+      host: the-host
+      database: the-db
+      user: user
+      password: password
+      maxSize: 5
+netty:
+  default:
+    allocator:
+      max-order: 3

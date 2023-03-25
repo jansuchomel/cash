@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: jansuchomel
+testFramework: junit
+sourceLanguage: kotlin
+buildTool: gradle_kotlin
+features: [annotation-api, app-name, data, data-hibernate-reactive, gradle, http-client, jackson-databind, junit, kotlin, kotlin-application, kotlin-build, logback, micronaut-build, netty-server, postgres, reactor, reactor-http-client, readme, security-annotations, security-jwt, shade, test-resources, vertx-pg-client, yaml]
